@@ -11,11 +11,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app/app-a" />
+            <option value="$PROJECT_DIR$/app/app-b" />
             <option value="$PROJECT_DIR$/app/ch12_material" />
             <option value="$PROJECT_DIR$/app/ch13_activity" />
             <option value="$PROJECT_DIR$/app/ch14_recevier" />
             <option value="$PROJECT_DIR$/app/ch15_outer" />
             <option value="$PROJECT_DIR$/app/ch15_service" />
+            <option value="$PROJECT_DIR$/app/ch15_threadtest" />
+            <option value="$PROJECT_DIR$/app/ch15_timer" />
           </set>
         </option>
       </GradleProjectSettings>
