@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 1행: START / STOP -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="서비스 START"
+        android:onClick="serviceStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnStop"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="56dp"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="서비스 STOP"
+        android:onClick="serviceStop"
+        app:layout_constraintTop_toTopOf="@id/btnStart"
+        app:layout_constraintStart_toEndOf="@id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- 2행: BIND / UNBIND -->
+    <Button
+        android:id="@+id/btnBind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="서비스 BIND"
+        android:onClick="serviceBind"
+        app:layout_constraintTop_toBottomOf="@id/btnStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnUnbind"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnUnbind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="서비스 UNBIND"
+        android:onClick="serviceUnBind"
+        app:layout_constraintTop_toTopOf="@id/btnBind"
+        app:layout_constraintStart_toEndOf="@id/btnBind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- 3행: 서비스 함수 호출 (이미지처럼 두 번째 줄 아래, 살짝 왼쪽 정렬 느낌) -->
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="서비스 함수 호출"
+        android:onClick="callServiceFunction"
+        app:layout_constraintTop_toBottomOf="@id/btnBind"
+        app:layout_constraintStart_toStartOf="@id/btnBind"
+        app:layout_constraintEnd_toEndOf="@id/btnUnbind"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

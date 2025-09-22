@@ -16,10 +16,13 @@
             <option value="$PROJECT_DIR$/app/ch12_material" />
             <option value="$PROJECT_DIR$/app/ch13_activity" />
             <option value="$PROJECT_DIR$/app/ch14_recevier" />
+            <option value="$PROJECT_DIR$/app/ch15_coroutine" />
             <option value="$PROJECT_DIR$/app/ch15_outer" />
             <option value="$PROJECT_DIR$/app/ch15_service" />
             <option value="$PROJECT_DIR$/app/ch15_threadtest" />
             <option value="$PROJECT_DIR$/app/ch15_timer" />
+            <option value="$PROJECT_DIR$/app/foregroundsevice" />
+            <option value="$PROJECT_DIR$/app/servicetest" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -5,11 +5,11 @@ plugins {
 
 android {
     viewBinding.isEnabled = true
-    namespace = "com.example.ch15_service"
+    namespace = "com.example.foregroundsevice"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.ch15_service"
+        applicationId = "com.example.foregroundsevice"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -34,10 +34,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    buildFeatures{
-        aidl =true
-    }
-    viewBinding.isEnabled = true
 }
 
 dependencies {
@@ -50,5 +46,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 }
