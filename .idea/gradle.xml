@@ -21,8 +21,10 @@
             <option value="$PROJECT_DIR$/app/ch15_service" />
             <option value="$PROJECT_DIR$/app/ch15_threadtest" />
             <option value="$PROJECT_DIR$/app/ch15_timer" />
+            <option value="$PROJECT_DIR$/app/dynamicbroadcast" />
             <option value="$PROJECT_DIR$/app/foregroundsevice" />
             <option value="$PROJECT_DIR$/app/servicetest" />
+            <option value="$PROJECT_DIR$/app/staticbroadcast" />
           </set>
         </option>
       </GradleProjectSettings>
